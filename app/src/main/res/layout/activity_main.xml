@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="키오스크를 연습해요!"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/explain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:gravity="center"
+        android:text="가게에 들어갔더니 기계만 있어서 당황하셨나요?\n키오스크는 도대체 뭔지 놀라셨나요?
+        \n변화하는 시대에 발맞추어 키오스크를 쓰는 연습을 해보아요!"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        app:layout_constraintTop_toBottomOf="@id/explain"
+        android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:gravity="center"
+        android:text="여기를 눌러 연습하러 가기!"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:backgroundTint="@color/green"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

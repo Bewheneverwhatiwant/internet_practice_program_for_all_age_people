@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/choice_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="우리 주변에서 볼 수 있는 가게를 골라보세요!"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/choice_macdonald"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/choice_title"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="50dp"
+        android:text="맥도날드(Macdonald)"
+        android:background="@drawable/btn_round"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/choice_lotteria"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/choice_macdonald"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="50dp"
+        android:text="롯데리아(Lotteria)"
+        android:background="@drawable/btn_round"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/choice_momstoush"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/choice_lotteria"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="50dp"
+        android:text="맘스터치(Mom's touch)"
+        android:background="@drawable/btn_round"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/choice_burgerking"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/choice_momstoush"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="50dp"
+        android:text="버거킹(Burger king)"
+        android:background="@drawable/btn_round"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/choice_cafe"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/choice_burgerking"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="50dp"
+        android:text="카페(일반적인 키오스크 연습)"
+        android:background="@drawable/btn_round"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

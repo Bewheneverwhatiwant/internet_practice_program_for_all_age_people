@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/macdonald_logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/macdonald_logo"
+        />
+
+    <TextView
+        android:id="@+id/macdonald_recommendMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/macdonald_logo"
+        android:text="추천 메뉴"
+        android:textSize="35sp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="40dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/macdonald_recommendMenu"
+        android:layout_marginLeft="30dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"
+        android:text="이전"
+        android:textStyle="bold"
+        android:background="@drawable/macdonald_green_button"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/macdonald_choice_coffe"
+        android:layout_width="80dp"
+        android:layout_height="120dp"
+        app:layout_constraintTop_toBottomOf="@id/macdonald_logo"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:drawableTop="@drawable/macdonald_choice_coffee"
+        android:text="음료와 커피"
+        android:textSize="12sp"
+        android:paddingTop="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/border_only_line"
+        android:layout_marginLeft="10dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/macdonald_choice_hamberger_set"
+        android:layout_width="80dp"
+        android:layout_height="120dp"
+        app:layout_constraintTop_toBottomOf="@id/macdonald_choice_coffe"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:drawableTop="@drawable/macdonald_choice_hamberger_set"
+        android:text="햄버거 세트"
+        android:textSize="12sp"
+        android:paddingTop="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/border_only_line"
+        android:layout_marginLeft="10dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/macdonald_choice_side_menu"
+        android:layout_width="80dp"
+        android:layout_height="120dp"
+        app:layout_constraintTop_toBottomOf="@id/macdonald_choice_hamberger_set"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:drawableTop="@drawable/macdonald_choice_side_menu"
+        android:text="사이드 메뉴"
+        android:textSize="12dp"
+        android:paddingTop="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/border_only_line"
+        android:layout_marginLeft="10dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/macdonald_choice_happy_meal"
+        android:layout_width="80dp"
+        android:layout_height="120dp"
+        app:layout_constraintTop_toBottomOf="@id/macdonald_choice_side_menu"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:drawableTop="@drawable/macdonald_choice_happy_meal"
+        android:text="해피밀"
+        android:textSize="12dp"
+        android:paddingTop="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/border_only_line"
+        android:layout_marginLeft="10dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bigmac1"
+        android:layout_width="100dp"
+        android:layout_height="120dp"
+        app:layout_constraintTop_toBottomOf="@id/macdonald_recommendMenu"
+        app:layout_constraintLeft_toRightOf="@id/macdonald_choice_coffe"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:drawableTop="@drawable/macdonald_choice_bigmac"
+        android:text="빅맥 4500원"
+        android:textSize="10sp"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bigmac2"
+        android:layout_width="100dp"
+        android:layout_height="120dp"
+        app:layout_constraintTop_toBottomOf="@id/macdonald_recommendMenu"
+        app:layout_constraintLeft_toRightOf="@id/bigmac1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:drawableTop="@drawable/macdonald_choice_bigmac"
+        android:text="1955버거 5500원"
+        android:textSize="10sp"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bigmac3"
+        android:layout_width="100dp"
+        android:layout_height="120dp"
+        app:layout_constraintTop_toBottomOf="@id/bigmac1"
+        app:layout_constraintLeft_toRightOf="@id/macdonald_choice_hamberger_set"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:drawableTop="@drawable/macdonald_choice_bigmac"
+        android:text="멕시칸 모짜렐라 4700원"
+        android:textSize="10sp"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bigmac4"
+        android:layout_width="100dp"
+        android:layout_height="120dp"
+        app:layout_constraintTop_toBottomOf="@id/bigmac2"
+        app:layout_constraintLeft_toRightOf="@id/bigmac3"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:drawableTop="@drawable/macdonald_choice_straberry_chiller"
+        android:text="딸기칠러 2000원"
+        android:textSize="10sp"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bigmac5"
+        android:layout_width="100dp"
+        android:layout_height="120dp"
+        app:layout_constraintTop_toBottomOf="@id/bigmac3"
+        app:layout_constraintLeft_toRightOf="@id/macdonald_choice_side_menu"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:drawableTop="@drawable/macdonald_choice_lazeberry"
+        android:text="라즈베리 크림치즈 파이 1000원"
+        android:textSize="10sp"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bigmac6"
+        android:layout_width="100dp"
+        android:layout_height="120dp"
+        app:layout_constraintTop_toBottomOf="@id/bigmac4"
+        app:layout_constraintLeft_toRightOf="@id/bigmac5"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:drawableTop="@drawable/macdonald_choice_corn"
+        android:text="콘스프 1500원"
+        android:textSize="10sp"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/macdonald_explain2"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/bigmac6"
+        android:layout_marginTop="150dp"
+        android:text="앗, 여기서 어떻게 해야하는지 모르겠다면?\n<<여기를 클릭!>>"
+        android:gravity="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@drawable/btn_explain"
+        />
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
